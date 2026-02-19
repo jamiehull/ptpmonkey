@@ -42,7 +42,7 @@ target_include_directories(ptpmonkey PUBLIC ${DIR_ASIO}/include)
 
 SET(CMAKE_CXX_STANDARD 17)
 
-list(APPEND flags "-fPIC" "-Wall" "-fpermissive" )
+list(APPEND flags "-fPIC" "-Wall" "-fpermissive")
 
 if(CMAKE_BUILD_TYPE MATCHES Release)
    list(APPEND flags "-O3")
@@ -113,4 +113,3 @@ if(${BUILD_PTP_EXAMPLES})
 	set_target_properties(ptpmonkeyexample PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
 	set_target_properties(ptpmonkeysync PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
 endif()
-
